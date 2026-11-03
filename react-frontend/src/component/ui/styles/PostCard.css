@@ -1,0 +1,38 @@
+.post-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #ffffff;
+}
+ 
+.post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.post-username {
+    font-weight: 600;
+    color: #333333;
+    font-size: 0.95rem;
+}
+ 
+.post-timestamp {
+    color: #888888;
+    font-size: 0.85rem;
+}
+ 
+.post-message {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #222222;
+    line-height: 1.5;
+    word-break: break-word;
+}
