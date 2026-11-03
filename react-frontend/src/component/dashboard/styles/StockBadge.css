@@ -1,0 +1,25 @@
+.stock-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.stock-badge--in {
+    background-color: #e7f6ee;
+    color: #0e6b3d;
+}
+
+.stock-badge--low {
+    background-color: #fdf3df;
+    color: #8a5300;
+}
+
+.stock-badge--out {
+    background-color: #fde8e8;
+    color: #b42323;
+}

@@ -1,13 +1,11 @@
 import "./App.css";
-import Post from "./component/ui/Post";
+import ProductDashboard from "./component/dashboard/ProductDashboard";
 
 function App() {
   return (
     <div className="App">
       <main className="app-main">
-        <h1>Create Post</h1>
-  
-      <Post />
+        <ProductDashboard />
       </main>
     </div>
   );

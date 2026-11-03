@@ -1,0 +1,24 @@
+.panel {
+    background-color: var(--dash-surface, #ffffff);
+    border: 1px solid var(--dash-border, #e1e4e8);
+    border-radius: 8px;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--dash-border, #e1e4e8);
+}
+
+.panel-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.panel-body {
+    padding: 16px;
+}
