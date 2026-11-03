@@ -5,6 +5,7 @@ export default function useProducts() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [lastUpdated, setLastUpdated] = useState(null);
 
   const fetchProducts = useCallback(async () => {
     setLoading(true);
@@ -13,6 +14,7 @@ export default function useProducts() {
     try {
       const response = await getProducts();
       setProducts(response.data.data || []);
+      setLastUpdated(new Date());
     } catch (err) {
       const errMsg =
         err.response?.data?.message ||
@@ -29,5 +31,5 @@ export default function useProducts() {
     fetchProducts();
   }, [fetchProducts]);
 
-  return { products, loading, error, refetch: fetchProducts };
+  return { products, loading, error, lastUpdated, refetch: fetchProducts };
 }

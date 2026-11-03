@@ -1,0 +1,40 @@
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 12px;
+    font-size: 0.85rem;
+    color: var(--dash-text-muted);
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pagination-btn {
+    padding: 0.4rem 0.75rem;
+    background-color: var(--dash-control-bg);
+    border: 1px solid var(--dash-control-border);
+    border-radius: 0.375rem;
+    color: var(--dash-text);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background-color: var(--dash-control-hover);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-page {
+    font-variant-numeric: tabular-nums;
+}

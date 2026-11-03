@@ -1,0 +1,49 @@
+.dashboard-skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skeleton {
+    background-color: var(--dash-skeleton);
+    border-radius: 8px;
+    animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+.skeleton-title {
+    width: 240px;
+    height: 32px;
+}
+
+.skeleton-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.skeleton-stat {
+    height: 92px;
+}
+
+.skeleton-panel {
+    height: 200px;
+}
+
+.skeleton-panel--tall {
+    height: 360px;
+}
+
+@keyframes skeleton-pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skeleton {
+        animation: none;
+    }
+}

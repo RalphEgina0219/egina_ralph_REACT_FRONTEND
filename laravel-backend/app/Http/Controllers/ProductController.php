@@ -11,7 +11,7 @@ class ProductController extends Controller
     // INDEX 
     public function index() 
     { 
-        $products = Product::all(); 
+        $products = Product::with('category')->get();
  
         $result = []; 
  

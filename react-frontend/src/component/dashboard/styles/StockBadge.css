@@ -10,16 +10,16 @@
 }
 
 .stock-badge--in {
-    background-color: #e7f6ee;
-    color: #0e6b3d;
+    background-color: var(--status-good-bg);
+    color: var(--status-good-text);
 }
 
 .stock-badge--low {
-    background-color: #fdf3df;
-    color: #8a5300;
+    background-color: var(--status-warning-bg);
+    color: var(--status-warning-text);
 }
 
 .stock-badge--out {
-    background-color: #fde8e8;
-    color: #b42323;
+    background-color: var(--status-critical-bg);
+    color: var(--status-critical-text);
 }

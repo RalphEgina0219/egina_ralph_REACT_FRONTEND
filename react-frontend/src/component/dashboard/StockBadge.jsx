@@ -1,15 +1,9 @@
-import { getStockLevel } from "./format";
+import { getStockLevel, STOCK_LEVELS } from "./format";
 import "./styles/StockBadge.css";
-
-const LEVELS = {
-  in: { icon: "●", label: "In stock" },
-  low: { icon: "▲", label: "Low stock" },
-  out: { icon: "✕", label: "Out of stock" },
-};
 
 export default function StockBadge({ quantity }) {
   const level = getStockLevel(quantity);
-  const { icon, label } = LEVELS[level];
+  const { icon, label } = STOCK_LEVELS[level];
 
   return (
     <span className={`stock-badge stock-badge--${level}`}>
